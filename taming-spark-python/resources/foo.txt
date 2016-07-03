@@ -1,0 +1,2 @@
+Foo file
+Bar file
