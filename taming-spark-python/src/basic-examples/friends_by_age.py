@@ -15,7 +15,6 @@ if __name__ == '__main__':
     lines = sc.textFile("file:///SparkCourse/fakefriends.csv")
     lines is of pyspark.rdd.RDD type
     '''
-
     lines = sc.textFile("/Users/dbiswas/Documents/SourceCode/Spark/spark-projects/taming-spark-python/resources/fakefriends.csv")
     print '\ntype of lines object : ', type(lines)
 
@@ -24,7 +23,6 @@ if __name__ == '__main__':
     Note:
     => What is pyspark.rdd.PipelinedRDD?
     '''
-
     rdd = lines.map(parse_line)
     print '\ntype of rdd object : ', type(rdd)
 
