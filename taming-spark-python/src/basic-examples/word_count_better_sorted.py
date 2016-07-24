@@ -5,7 +5,8 @@ def normalizeWords(text):
     return re.compile(r'\W+', re.UNICODE).split(text.lower())
 
 if __name__ == '__main__':
-    sparkConf = SparkConf().setAppName("Word Count Better - Sorted")
+    #sparkConf = SparkConf().setAppName("Word Count Better - Sorted")
+    sparkConf = SparkConf().setMaster("local").setAppName("Word Count Better - Sorted")
     sc = SparkContext(conf=sparkConf)
 
     input = sc.textFile("/Users/dbiswas/Documents/SourceCode/Spark/spark-projects/taming-spark-python/resources/story.txt")

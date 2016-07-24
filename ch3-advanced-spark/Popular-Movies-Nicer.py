@@ -2,7 +2,7 @@ from pyspark import SparkConf, SparkContext
 
 def loadMovieNames():
     movieNames = {}
-    with open("ml-100k/u.ITEM") as f:
+    with open("/Users/dbiswas/Documents/SourceCode/Spark/spark-projects/taming-spark-python/resources/customer-orders.csv/u.item") as f:
         for line in f:
             fields = line.split('|')
             movieNames[int(fields[0])] = fields[1]
