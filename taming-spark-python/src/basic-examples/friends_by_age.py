@@ -38,3 +38,7 @@ if __name__ == '__main__':
     for result in results:
         print 'type of result object : ', type(result)
         print result
+
+    #ToDo
+    #Write a file in below format
+    #<Age, Total Number of Friends, Number of perosn with this age, Avg no of friends of this age>

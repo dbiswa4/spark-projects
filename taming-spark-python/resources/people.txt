@@ -1,0 +1,5 @@
+Optimus Prime, 41
+Bumblebee, 29
+Jedi, 34
+Iron Man, 32
+Spider Man, 27

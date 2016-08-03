@@ -37,7 +37,7 @@ if __name__ == '__main__':
     #results = word_counts.collect()
 
     for result in results:
-        print 'result : ', type(result)
+        print 'result type : ', type(result)
         print result
         count = str(result[0])
         word = result[1].encode('ascii', 'ignore')
