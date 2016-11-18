@@ -15,7 +15,7 @@ def make_tracks_kv(str):
     Pay attention to [] used as opposed to ().
     [x,[[y, z]]]
     Apprently one extra pair of [] has been used around [y, z]. To my understanding,
-    it is to tell Spark that there will be Array of [y, z] which it self is an Array.
+    it is to tell Spark that there will be Array of [y, z] which itself is an Array.
     That means Array of Array.
     If we do not use additional pair of [], reduceByKey() operation just creates one
     single comma separated string out of all possible values of [y, z].

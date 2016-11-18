@@ -49,6 +49,11 @@ def bid_data_analysis(sc, sqlContext):
     #                        line[4], line[5], line[6]))
 
 
+    '''
+    ToDo:
+    => How can we store this schema as a separate file and use it in this program to make it reusable?
+
+    '''
     print '\nFirst row of ebay : ', ebay.first()
     print 'type of ebay : ', type(ebay)
 
